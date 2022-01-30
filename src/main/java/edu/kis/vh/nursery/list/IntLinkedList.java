@@ -1,10 +1,17 @@
 package edu.kis.vh.nursery.list;
 
+/**
+ * Klasa IntLinkedList przetrzymująca listę dwukierunkową liczb całkowitych.
+ */
 public class IntLinkedList {
 
     private Node last;
     int i;
 
+    /**
+     * metoda dodaje nowy element do listy
+     * @param i: wartość elementu listy
+     */
     public void push(int i) {
         if (last == null)
             last = new Node(i);
@@ -15,20 +22,36 @@ public class IntLinkedList {
         }
     }
 
+    /**
+     * metoda sprawdza czy lista jest pusta
+     * @return zwraca true jeśli lista jest pusta
+     */
     public boolean isEmpty() {
         return last == null;
     }
 
+    /**
+     * metoda do sprawdzenia czy lista jest pełna
+     * @return zwraca zawsze false
+     */
     public boolean isFull() {
         return false;
     }
 
+    /**
+     * metoda do poznania wartości ostatniego elementu
+     * @return zwraca wartość ostatniego elementu
+     */
     public int top() {
         if (isEmpty())
             return -1;
         return last.getValue();
     }
 
+    /**
+     * metoda usuwa ostatni element i ustawia jako ostatni element ten który był przedostatni
+     * @return zwracca wartość ostatniego elementu
+     */
     public int pop() {
         if (isEmpty())
             return -1;
@@ -37,6 +60,10 @@ public class IntLinkedList {
         return ret;
     }
 
+    /**
+     * Klasa Node jest to pojedynczy element w liście przechoiwujący wartość, jak i wskaźnik na
+     * poprzedni i następny element w liście
+     */
     private class Node {
 
         private int value;
