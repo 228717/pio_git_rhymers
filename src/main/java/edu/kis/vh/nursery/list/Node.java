@@ -34,3 +34,6 @@ public class Node {
         this.next = next;
     }
 }
+
+//Wszystkie settery są gdzieś wykorzystywane. Jedynny jaki można by usunąć
+//jest setValue i ustawiać pole value jedynie przez konstruktor.
