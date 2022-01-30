@@ -6,7 +6,7 @@ package edu.kis.vh.nursery.list;
 public class IntLinkedList {
 
     private Node last;
-    int i;
+    int i; //TODO: zmienna nie jest nigdzie używana
 
     /**
      * metoda dodaje nowy element do listy
