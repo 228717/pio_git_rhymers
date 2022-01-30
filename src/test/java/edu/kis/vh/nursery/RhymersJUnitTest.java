@@ -82,3 +82,4 @@ public class RhymersJUnitTest {
 	}
 
 }
+//Program przeszedł wszystkie testy pomyślnie.
